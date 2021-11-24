@@ -8,8 +8,9 @@ As a note to the reader, this code runs far better on Windows operating systems 
 To play:
 
 1. Download Repo 
-2. In your terminal run `python main.py` when inside the game directory
-3. Have fun playing the game!
+2. Install pygame by running `pip install pygame` in your terminal
+3. In your terminal run `python main.py` when inside the game directory
+4. Have fun playing the game!
 
 To auto sink the balls press `W` and to auto sink the 8 ball, press `Q`. Press in that order for a neat surprise :)
 
