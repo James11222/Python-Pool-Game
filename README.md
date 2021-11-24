@@ -7,4 +7,4 @@ As a note to the reader, this code runs far better on Windows operating systems 
 
 Have fun playing the game!
 
-![image info](pool_gif.gif)
+![image info](pool_game.gif)
