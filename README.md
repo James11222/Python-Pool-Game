@@ -10,7 +10,8 @@ To play:
 1. Download Repo 
 2. Install pygame by running `pip install pygame` in your terminal
 3. In your terminal run `python main.py` when inside the game directory
-4. Have fun playing the game!
+4. Move mouse to control stick direction, hold the space bar (~1-3 seconds) to charge up your shot. 
+5. Have fun playing the game!
 
 To auto sink the balls press `W` and to auto sink the 8 ball, press `Q`. Press in that order for a neat surprise :)
 
