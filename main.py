@@ -6,11 +6,11 @@ import time
 pygame.init()
 #initialize and create some variables
 songs = ['Elevator Music.mp3', 'Finisher_2.mp3']
-pygame.mixer.music.load(songs[0])
+pygame.mixer.music.load('assets/audio/' + songs[0])
 pygame.mixer.music.play()
 width, height = 800, 500
 Surface = pygame.display.set_mode((800,500))
-bg = pygame.image.load("pooltable.png")
+bg = pygame.image.load("assets/images/pooltable.png")
 bg = pygame.transform.scale(bg,(800,500))
 #colors
 red = (255,0,0)
@@ -287,10 +287,10 @@ def CollisionDetect():
 #JAMES'S CODE -------------------------------------------------------
 
 #DARBY'S CODE -------------------------------------------------------
-                sound1 = pygame.mixer.Sound("poolballhit.wav")
-                sound2 = pygame.mixer.Sound("billiards+2.wav")
-                sound3 = pygame.mixer.Sound("Billiards+3.wav")
-                sound4 = pygame.mixer.Sound("poolhall.wav")
+                sound1 = pygame.mixer.Sound("assets/audio/poolballhit.wav")
+                sound2 = pygame.mixer.Sound("assets/audio/billiards+2.wav")
+                sound3 = pygame.mixer.Sound("assets/audio/Billiards+3.wav")
+                sound4 = pygame.mixer.Sound("assets/audio/poolhall.wav")
                 sounds = [sound1, sound2, sound3, sound4]
                 random_num = random.randrange(0,3)
                 random_sound = sounds[random_num]
@@ -311,13 +311,13 @@ def Draw():
         pygame.draw.line(Surface,white,[que.position3.x,que.position3.y],[que.position4.x,que.position4.y],1)
     if Balls[len(Balls)-1] != solid_8:
         if len(Balls) > 1:
-            font = pygame.font.Font('batmfa__.ttf', 80)
+            font = pygame.font.Font('assets/fonts/batmfa__.ttf', 80)
             text = font.render('GAME OVER!', True, black)
             textRect = text.get_rect()
             textRect.center = (400,250)
             Surface.blit(text, textRect)
         elif len(Balls) == 1:
-            font = pygame.font.Font('batmfa__.ttf', 80)
+            font = pygame.font.Font('assets/fonts/batmfa__.ttf', 80)
             text = font.render('YOU WIN!', True, black)
             textRect = text.get_rect()
             textRect.center = (400,250)
@@ -326,12 +326,12 @@ def Draw():
 
 #DARBY'S CODE ------------------------------------------------------
     x,y = score()
-    font = pygame.font.Font('batmfa__.ttf', 18)
+    font = pygame.font.Font('assets/fonts/batmfa__.ttf', 18)
     text = font.render('Score of red balls: {0:1.0f}'.format(x), True, red,black)
     textRect = text.get_rect()
     textRect.center = (210,25)
     Surface.blit(text, textRect)
-    font2 = pygame.font.Font('batmfa__.ttf', 18)
+    font2 = pygame.font.Font('assets/fonts/batmfa__.ttf', 18)
     text2 = font.render('Score of blue balls: {0:1.0f}'.format(y), True, blue,black)
     textRect2 = text2.get_rect()
     textRect2.center = (590,25)
